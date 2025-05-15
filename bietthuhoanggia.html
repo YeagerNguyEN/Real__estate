@@ -2,118 +2,150 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Biệt thự Hoàng Gia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Khách Sạn Hoàng Gia</title>
     <style>
       * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
       body {
-        margin: 0;
-        padding: 40px;
-        font-family: "Segoe UI", sans-serif;
-        background-color: #f4f4f4;
-        color: #222;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .container {
-        max-width: 1200px;
-        margin: auto;
-        background-color: white;
-        border-radius: 12px;
-        overflow: hidden;
-        display: flex;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      }
-
-      .image-side {
-        flex: 1;
-        background-color: #e6f2e6;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      }
-
-      .image-side img {
+        max-width: 900px;
         width: 100%;
-        max-width: 400px;
-        border-radius: 12px;
-        border: 4px solid #28a745;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
       }
 
-      .text-side {
-        flex: 2;
-        padding: 40px;
+      .product-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-bottom: 3px solid #b59b67;
+        object-fit: cover;
+        max-height: 400px;
+        transition: transform 0.3s ease;
+      }
+      .product-image:hover {
+        transform: scale(1.05);
       }
 
-      .text-side h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-        color: #007b5e;
+      .description {
+        padding: 20px;
+        font-size: 1.1rem;
+        color: #444;
       }
-
-      .text-side p {
-        font-size: 16px;
-        line-height: 1.8;
+      .description h1 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: #2c2c2c;
+      }
+      .description p {
+        margin-bottom: 12px;
         text-align: justify;
       }
 
-      /* Scroll nếu văn bản quá dài */
-      .text-side {
-        max-height: 700px;
-        overflow-y: auto;
-      }
-
-      /* Ẩn thanh cuộn trên Chrome */
-      .text-side::-webkit-scrollbar {
-        width: 6px;
-      }
-
-      .text-side::-webkit-scrollbar-thumb {
-        background-color: #ccc;
-        border-radius: 4px;
+      @media (max-width: 600px) {
+        .container {
+          border-radius: 0;
+          box-shadow: none;
+        }
+        .description {
+          padding: 15px;
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="image-side">
-        <img src="./bietthuhoanggia.jpg" alt="Biệt thự Hoàng Gia" />
-      </div>
-      <div class="text-side">
-        <h2>Biệt thự Hoàng Gia</h2>
+      <img
+        src="./bietthuhoanggia.jpg"
+        alt="Khách Sạn Hoàng Gia"
+        class="product-image"
+      />
+      <div class="description">
+        <h1>Khách Sạn Hoàng Gia</h1>
         <p>
-          <strong
-            >GIỚI THIỆU KHÁCH SẠN HOÀNG GIA – TINH HOA NGHỈ DƯỠNG GIỮA LÒNG
-            THÀNH PHỐ</strong
-          ><br /><br />
-          Tọa lạc tại trung tâm trái tim của thành phố biển Đà Nẵng, Khách sạn
-          Hoàng Gia là biểu tượng của sự giao thoa hoàn hảo giữa đẳng cấp hoàng
-          gia và không gian nghỉ dưỡng hiện đại. Với tông màu trắng chủ đạo,
-          khách sạn không chỉ gây ấn tượng bởi vẻ ngoài trang nhã, thanh lịch,
-          mà còn là nơi hội tụ của sự tinh tế trong thiết kế và chất lượng dịch
-          vụ đạt chuẩn quốc tế.
-          <br /><br />
-          <strong>1. Vị trí đắc địa – Trung tâm kết nối:</strong> Khách sạn
-          Hoàng Gia nằm trên đại lộ Phạm Văn Đồng, chỉ cách bãi biển Mỹ Khê –
-          một trong những bãi biển quyến rũ nhất hành tinh – chưa đầy 300m đi
-          bộ. Du khách chỉ mất 10 phút để di chuyển từ trung tâm ra sân bay, và
-          chưa đến 5 phút để đến Cầu Rồng – biểu tượng văn hóa độc đáo của thành
-          phố. Ngoài ra, khách sạn còn là điểm giao thông thuận lợi để khám phá
-          các danh thắng nổi tiếng như phố cổ Hội An (30km), Bà Nà Hills (35km),
-          đèo Hải Vân và thánh địa Mỹ Sơn. <br /><br />
-          <strong
-            >2. Kiến trúc ngoại thất – Biểu tượng trắng thanh lịch:</strong
-          >
-          Với thiết kế mang phong cách Tân cổ điển Pháp, khách sạn Hoàng Gia nổi
-          bật giữa lòng thành phố nhờ lớp sơn trắng thuần khiết phủ toàn bộ tòa
-          nhà. Mặt tiền được trang trí bằng các cột trụ lớn vững chãi, sở có mái
-          vòm và những đường viền hoa văn tinh xảo, tạo nên một diện mạo vương
-          giả, đầy kiêu hãnh. Đêm đêm, khi ánh đèn vàng ấm áp từ hệ thống chiếu
-          sáng ngoại trời được bật lên, toàn bộ tòa khách sạn như biến thành một
-          điện ảnh sáng, thu hút ánh nhìn của mọi người qua đường.
+          <strong>Địa chỉ:</strong> Số 88, Đại lộ Thịnh Vượng, Quận Trung Tâm,
+          Thành phố Phồn Vinh
+        </p>
+        <p>
+          <strong>Chủ đầu tư:</strong> Tập đoàn Hoàng Gia Phát - một trong những
+          tập đoàn bất động sản hàng đầu trong nước
+        </p>
+
+        <h2>Quy mô và thiết kế</h2>
+        <ul>
+          <li>
+            Tòa nhà 25 tầng với 300 phòng nghỉ sang trọng và hơn 50 căn hộ dịch
+            vụ cao cấp
+          </li>
+          <li>
+            Kiến trúc hiện đại kết hợp phong cách hoàng gia châu Âu, nội thất
+            dát vàng và trang trí tỉ mỉ từng chi tiết
+          </li>
+        </ul>
+
+        <h2>Tiện ích</h2>
+        <ul>
+          <li>
+            Trung tâm thương mại với hơn 50 cửa hàng thời trang, ẩm thực và giải
+            trí
+          </li>
+          <li>Hồ bơi vô cực trên tầng thượng với view toàn cảnh thành phố</li>
+          <li>
+            Phòng hội nghị quốc tế sức chứa 500 khách, trang thiết bị hiện đại
+          </li>
+          <li>Khu spa và gym tiêu chuẩn 5 sao</li>
+        </ul>
+
+        <h2>Vị trí và giá trị đầu tư</h2>
+        <ul>
+          <li>
+            Nằm trên đại lộ chính của thành phố, thuận tiện kết nối với các khu
+            vực kinh tế trọng điểm và trung tâm văn hóa giải trí
+          </li>
+          <li>
+            Điểm nhấn bất động sản cao cấp, mang lại tiềm năng sinh lời cao cho
+            nhà đầu tư
+          </li>
+        </ul>
+
+        <p><strong>Dự kiến khai trương:</strong> Quý 3 năm 2026</p>
+        <p>
+          Khách sạn Hoàng Gia tọa lạc tại vị trí đắc địa giữa trung tâm thành
+          phố, thuận tiện kết nối đến các khu vực văn hóa, thương mại và giải
+          trí chính. Với kiến trúc tinh tế hòa quyện giữa phong cách cổ điển và
+          hiện đại, khách sạn mang đến không gian nghỉ dưỡng yên tĩnh và sang
+          trọng.
+        </p>
+        <p>
+          Hệ thống phòng nghỉ được trang bị đầy đủ tiện nghi cao cấp, từ phòng
+          tiêu chuẩn đến suite hạng sang, đảm bảo đáp ứng nhu cầu đa dạng của
+          khách hàng. Mỗi phòng đều có cửa sổ lớn với tầm nhìn thoáng đãng, tạo
+          cảm giác thoải mái và thư giãn tối đa.
+        </p>
+        <p>
+          Khách sạn còn cung cấp các dịch vụ tiện ích như nhà hàng phục vụ ẩm
+          thực đa dạng, phòng họp hiện đại, spa chăm sóc sức khỏe và trung tâm
+          thể dục. Đội ngũ nhân viên chuyên nghiệp và tận tâm luôn sẵn sàng hỗ
+          trợ để mỗi kỳ nghỉ tại đây là trải nghiệm đáng nhớ.
         </p>
       </div>
     </div>
