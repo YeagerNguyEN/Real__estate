@@ -2,6 +2,83 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        padding: 20px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 4px 8px;
+        font-size: 12px;
+        color: white;
+        border-radius: 4px;
+        background: gray;
+      }
+
+      .for-sale {
+        background-color: #007bff;
+      }
+
+      .hot {
+        left: auto;
+        right: 10px;
+        background-color: #dc3545;
+      }
+
+      .product-card h3 {
+        margin: 10px;
+        font-size: 16px;
+      }
+
+      .location {
+        margin: 0 10px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .features {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+      }
+
+      .features li {
+        margin-bottom: 4px;
+      }
+
+      .price {
+        margin: 10px;
+        font-weight: bold;
+        color: #28a745;
+      }
+    </style>
     <title>YEAGER REAL ESTATE</title>
     <link
       rel="stylesheet"
@@ -105,6 +182,53 @@
       Thông tin tại đây chỉ là mô phỏng mô hình web buôn bán bất động sản, mọi
       thông tin đều không có thật
     </h3>
-    <a href="./bietthuhoanggia.html">Click vào đây để xem sản phẩm đầu tiên</a>
+    <h2>Danh sách biệt thự</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./bietthuhoanggia.jpg" alt="The Manor" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt thự The Manor Central Park</h3>
+        <p class="location">Nguyễn Xiển, Hoàng Mai, Hà Nội</p>
+        <ul class="features">
+          <li>Phòng ngủ: 02</li>
+          <li>Phòng tắm: 02</li>
+          <li>Diện tích: trên 180m²</li>
+        </ul>
+        <p class="price">15.45 Tỷ</p>
+        <a href="./bietthuhoanggia.html">xem thông tin chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./bietthuroyal.jpg" alt="Opal Skyview" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt Thự Opal Skyview</h3>
+        <p class="location">Phạm Văn Đồng, Quận Bình Thạnh, TP.HCM</p>
+        <ul class="features">
+          <li>Phòng ngủ: 02</li>
+          <li>Phòng tắm: 01</li>
+          <li>Diện tích: Trên 50m²</li>
+        </ul>
+        <p class="price">7.8 Tỷ</p>
+        <a href="./bietthuroyal.html">xem chi tiết tại đây</a>
+      </div>
+
+      <div class="product-card">
+        <img src="./bietthusunny.jpg" alt="Opal Skyview" />
+        <div class="tag for-sale">Cho bán</div>
+        <div class="tag hot">HOT</div>
+        <h3>Biệt thự Opal Skyview</h3>
+        <p class="location">Phạm Văn Đồng, Quận Bình Thạnh, TP.HCM</p>
+        <ul class="features">
+          <li>Phòng ngủ: 02</li>
+          <li>Phòng tắm: 01</li>
+          <li>Diện tích: Trên 100²</li>
+        </ul>
+        <p class="price">10.5 Tỷ</p>
+        <a href="./bietthusunny.html">Xem thông tin chi tiết tại đây</a>
+      </div>
+    </div>
   </body>
 </html>
